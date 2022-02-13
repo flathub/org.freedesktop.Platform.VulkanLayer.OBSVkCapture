@@ -25,11 +25,8 @@ modules:
     sources: &vkcapture-sources
       - type: git
         url: https://github.com/nowrep/obs-vkcapture.git
-        tag: v1.1.1
-        commit: 8e7bfdbe2248664adb7a8c92805e329408e51f6e
-      - type: patch
-        path: patches/obs-glcapture.patch
-        use-git: true
+        tag: v1.1.2
+        commit: a043a22fb58c67ee2f8ec58990b58a7ec060c110
 
   - name: OBSVkCapture-32bit
     buildsystem: cmake-ninja
