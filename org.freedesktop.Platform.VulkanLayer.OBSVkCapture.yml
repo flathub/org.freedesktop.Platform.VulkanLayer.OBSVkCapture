@@ -27,6 +27,10 @@ modules:
         url: https://github.com/nowrep/obs-vkcapture.git
         tag: v1.1.2
         commit: a043a22fb58c67ee2f8ec58990b58a7ec060c110
+        x-checker-data:
+          type: git
+          is-main-source: true
+          tag-pattern: ^v([\d.]+)$
 
   - name: OBSVkCapture-32bit
     buildsystem: cmake-ninja
