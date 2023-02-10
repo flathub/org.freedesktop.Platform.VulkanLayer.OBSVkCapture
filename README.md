@@ -5,6 +5,17 @@ Tools to capture Vulkan/OpenGL applications with OBS. For instructions on how to
 
 For this to work you also need the corresponding OBS VkCapture plugin for OBS Studio. This plugin is available as [`com.obsproject.Studio.Plugin.OBSVkCapture` on Flathub](https://github.com/flathub/com.obsproject.Studio.Plugin.OBSVkCapture).
 
+Installation
+-----------
+
+This plugin is an extension for Freedesktop Platform therefore is not listed on the Flathub website to download it.
+
+To install this plugin you need to run this command in a terminal:
+
+```
+flatpak install org.freedesktop.Platform.VulkanLayer.OBSVkCapture
+```
+
 Permissions
 -----------
 
