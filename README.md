@@ -8,7 +8,7 @@ For this to work you also need the corresponding OBS VkCapture plugin for OBS St
 Installation
 -----------
 
-This plugin is an extension for Freedesktop Platform therefore is not listed on the Flathub website to download it.
+This flatpak is an extension for the Freedesktop platform and is therefore not listed on the Flathub website.
 
 To install this plugin you need to run this command in a terminal:
 
