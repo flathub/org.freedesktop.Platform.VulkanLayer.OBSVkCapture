@@ -25,8 +25,8 @@ modules:
     sources: &vkcapture-sources
       - type: git
         url: https://github.com/nowrep/obs-vkcapture.git
-        tag: v1.3.2
-        commit: 7a40dbd2e5d55b934fcfe04ecf9533ed4351974f
+        tag: v1.3.3
+        commit: 014c1efd84c4f8259f08a0b7de419de138dbd832
         x-checker-data:
           type: git
           is-main-source: true
