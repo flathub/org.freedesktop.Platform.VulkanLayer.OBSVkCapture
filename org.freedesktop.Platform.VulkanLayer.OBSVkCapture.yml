@@ -1,7 +1,7 @@
 id: org.freedesktop.Platform.VulkanLayer.OBSVkCapture
-branch: '23.08'
+branch: '24.08'
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 build-extension: true
 separate-locales: false
@@ -48,8 +48,7 @@ modules:
     buildsystem: simple
     build-commands:
       - install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo ${FLATPAK_ID}.metainfo.xml
-      - appstream-compose --basename=${FLATPAK_ID} --prefix=${FLATPAK_DEST} --origin=flatpak
-        ${FLATPAK_ID}
+      - appstreamcli compose --components=${FLATPAK_ID} --prefix=/ --origin=${FLATPAK_ID} --result-root=${FLATPAK_DEST} --data-dir=${FLATPAK_DEST}/share/app-info/xmls ${FLATPAK_DEST}
     sources:
       - type: file
         path: org.freedesktop.Platform.VulkanLayer.OBSVkCapture.metainfo.xml
