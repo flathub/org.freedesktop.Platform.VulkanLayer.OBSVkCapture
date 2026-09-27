@@ -5,7 +5,6 @@ runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 build-extension: true
 separate-locales: false
-appstream-compose: false
 sdk-extensions:
   - org.freedesktop.Sdk.Compat.i386
   - org.freedesktop.Sdk.Extension.toolchain-i386
@@ -47,10 +46,7 @@ modules:
   - name: metadata
     buildsystem: simple
     build-commands:
-      - install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo ${FLATPAK_ID}.metainfo.xml
-      - appstreamcli compose --components=${FLATPAK_ID} --prefix=/ --origin=${FLATPAK_ID}
-        --result-root=${FLATPAK_DEST} --data-dir=${FLATPAK_DEST}/share/app-info/xmls
-        ${FLATPAK_DEST}
+      - install -Dpm0644 -t ${FLATPAK_DEST}/share/metainfo ${FLATPAK_ID}.metainfo.xml
     sources:
       - type: file
         path: org.freedesktop.Platform.VulkanLayer.OBSVkCapture.metainfo.xml
